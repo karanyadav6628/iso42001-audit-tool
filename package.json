@@ -1,0 +1,24 @@
+{
+  "name": "iso42001-audit-tool-node",
+  "version": "1.0.0",
+  "description": "Node.js version of the ISO audit checklist tool.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "check": "node --check src/server.js && node --check src/db.js && node --check src/schema.js && node --check src/checklists.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "express-session": "^1.18.1",
+    "multer": "^2.2.0",
+    "mysql2": "^3.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

@@ -129,7 +129,7 @@ function page(title, body, bodyClass = "") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${h(title)}</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css?v=20260708">
 </head>
 <body${bodyClass ? ` class="${h(bodyClass)}"` : ""}>
 ${body}
